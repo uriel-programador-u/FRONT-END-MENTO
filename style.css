@@ -1,0 +1,248 @@
+:root {
+    --Violet: #674baf;
+    --SoftMagenta: #e882e8;
+    --White: #ffffff;
+    --BlueKing: #546de5;
+    --SkyBlue: #1e90ff;
+    --Orange: #ff4757;
+    --DryGreen: #009432;
+    --BloodRed: #c23616;
+    --Silver: #bdc3c7;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;   
+    font-family: 'Poppins', sans-serif;
+    background: url(images/bg-desktop.svg) no-repeat, linear-gradient(#674baf, #674baf);
+}
+
+img {
+    max-width: 100%;
+}
+
+.huddle {
+    padding: 5rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.front {
+    margin-top: 3.5em;
+    display: flex;
+}
+
+.img-principal {
+    width: 55%;
+}
+
+.columns {
+    position: absolute;
+    width: 35%;
+    padding-top: 1.5em;
+    margin-left: 75rem;
+    margin-top: -51em;
+}
+
+.img-principal+.columns {
+    margin-left: 2em;
+}
+
+.columns h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 4rem;
+    word-spacing: 3px;
+}
+
+.columns p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    color: #bdc3c7;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    color: #674baf;
+    padding: 1em 4em;
+    background: #ffffff;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1.6rem;
+}
+
+
+.boton:hover {
+    background: #e882e8;
+    color: #ffffff;
+}
+
+
+.networks-icons {
+    position: absolute;
+    bottom: 40px;
+    right: 16px;
+    
+}
+
+.fa {
+    text-decoration: none;
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 10px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.fa-facebook:hover {
+    border-color: #546de5;
+    color: #546de5;
+}
+.fa-twitter:hover {
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+.fa-instagram:hover {
+    border-color: #ff4757;
+    color: #ff4757;
+}
+.fa-whatsapp:hover {
+    border-color: #009432;
+    color: #009432;
+}
+.fa-youtube:hover {
+    border-color: #c23616;
+    color: #c23616;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.attribution a:hover {
+    color: #e882e8;
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat, linear-gradient(#674baf, #674baf);
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .front {
+        display: block;
+    }
+
+    .img-principal+.columns {
+        margin-left: 0;
+    }
+
+    .img-principal,
+    .columns,
+    .networks-icons {
+        width: 100%;
+    }
+
+    .columns {
+        text-align: center;
+        margin-top: 2em;
+        margin-left: auto;
+        font-size: 1rem;
+    }
+
+    .columns h1 {
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 3.2rem;
+        word-spacing: 3px;
+    }
+
+    .columns p {
+        font-family: 'Open Sans',sans-serif;
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: #bdc3c7;
+        margin-top: -2rem;
+    }
+
+    .boton {
+        padding: 0.7em 4em;
+        margin-bottom: 2em;
+        margin-top: 1rem;
+    }
+
+    .networks-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;           display: inline-block;
+        font-size: 1rem;
+        margin-left: 13px;
+        padding: 11px 11px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        margin-block-end: -72rem;
+    }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-left: 1px;
+            padding: 400px 10px;
+        }
+        
+        .attribution a {
+            text-decoration: none;
+            color: #ffffff;
+            text-align:center;
+        }
+        
+        .attribution a:hover {
+            color: #e882e8;
+        }
+}
